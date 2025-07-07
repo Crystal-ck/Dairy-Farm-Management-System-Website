@@ -1,0 +1,46 @@
+<!-- breeding.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breeding Schedules</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Breeding Schedules</h1>
+    <nav>
+      <a href="cows.html">Cows</a>
+      <a href="feeding.html">Feeding</a>
+      <a href="breeding.html" class="active">Breeding</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Assign Breeding</h2>
+      <form>
+        <input type="text" placeholder="Cow ID" required />
+        <input type="text" placeholder="Bull ID" />
+        <input type="date" placeholder="Breeding Date" />
+        <input type="date" placeholder="Expected Calving" />
+        <button type="submit">Assign</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Schedule</h2>
+      <table>
+        <tr>
+          <th>Cow</th><th>Bull</th><th>Breeding Date</th><th>Expected Calving</th><th>Actions</th>
+        </tr>
+        <tr>
+          <td>001</td><td>B002</td><td>2025-06-15</td><td>2026-03-20</td>
+          <td><button>Edit</button> <button>Delete</button></td>
+        </tr>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
