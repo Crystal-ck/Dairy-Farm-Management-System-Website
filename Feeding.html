@@ -1,0 +1,45 @@
+<!-- feeding.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feeding Stock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Feeding Stock</h1>
+    <nav>
+      <a href="cows.html">Cows</a>
+      <a href="feeding.html" class="active">Feeding</a>
+      <a href="breeding.html">Breeding</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Add Feed Stock</h2>
+      <form>
+        <input type="text" placeholder="Feed Type" required />
+        <input type="number" placeholder="Quantity (kg)" />
+        <input type="date" placeholder="Date Received" />
+        <button type="submit">Save</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Feed Inventory</h2>
+      <table>
+        <tr>
+          <th>Type</th><th>Quantity</th><th>Date Received</th><th>Actions</th>
+        </tr>
+        <tr>
+          <td>Silage</td><td>500</td><td>2025-07-01</td>
+          <td><button>Edit</button> <button>Delete</button></td>
+        </tr>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
